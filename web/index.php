@@ -1,1 +1,3 @@
-<?php echo __FILE__;
+<?php
+
+require '../bootstrap.php';
