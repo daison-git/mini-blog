@@ -1,6 +1,6 @@
 <?php
 
-class UserRepository extends Repository {
+class UserRepository extends DbRepository {
 
     public function insert($user_name, $password) {
         $password = $this->hashPassword($password);
