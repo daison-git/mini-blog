@@ -22,8 +22,8 @@ class MiniBlogApplication extends Application {
                 => array('controller' => 'account', 'action' => 'index'),
             '/account/:action'
                 => array('controller' => 'account'),
-            // '/follow'
-            //     => array('controller' => 'account', 'action' => 'follow'),
+            '/follow'
+                => array('controller' => 'account', 'action' => 'follow'),
             );
     }
 
