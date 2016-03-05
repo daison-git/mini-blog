@@ -46,7 +46,7 @@ class Request {
         return $_SERVER['REQUEST_URI'];
     }
 
-    public function getBaseUri() {
+    public function getBaseUrl() {
         $script_name = $_SERVER['SCRIPT_NAME'];
 
         $request_uri = $this->getRequestUri();
@@ -61,7 +61,7 @@ class Request {
     }
 
     public function getPathInfo() {
-        $base_uri = $this->getBaseUri();
+        $base_uri = $this->getBaseUrl();
         $request_uri = $this->getRequestUri();
 
         if (false !== ($pos = strpos($request_uri, '?'))) {

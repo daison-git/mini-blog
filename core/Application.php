@@ -55,6 +55,10 @@ abstract class Application {
         return $this->response;
     }
 
+    public function getSession() {
+        return $this->session;
+    }
+
     public function getDbManager() {
         return $this->db_manager;
     }

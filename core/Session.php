@@ -14,7 +14,7 @@ class Session {
     }
 
     public function set($name, $value) {
-        $_SESSION[$name];
+        $_SESSION[$name] = $value;
     }
 
 
