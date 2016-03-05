@@ -18,10 +18,10 @@ class MiniBlogApplication extends Application {
             //     => array('controller' => 'status', 'action' => 'user'),
             // '/user/:user_name/status/:id'
             //     => array('controller' => 'status', 'action' => 'show'),
-            // '/account'
-            //     => array('controller' => 'account', 'action' => 'index'),
-            // '/account/:action'
-            //     => array('controller' => 'account'),
+            '/account'
+                => array('controller' => 'account', 'action' => 'index'),
+            '/account/:action'
+                => array('controller' => 'account'),
             // '/follow'
             //     => array('controller' => 'account', 'action' => 'follow'),
             );
