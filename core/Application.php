@@ -40,7 +40,7 @@ abstract class Application {
 
     abstract public function getRootDir();
 
-    abstract public function registerRoutes();
+    abstract protected function registerRoutes();
 
     public function isDebugMode() {
         return $this->debug;
@@ -84,7 +84,7 @@ abstract class Application {
         try {
             $params = $this->router->resolve($this->request->getPathInfo());
             if ($params === false) {
-                throw new HttpNotFoundException('No route found for ' . $this->request->getPathInfo);
+                throw new HttpNotFoundException('No route found for ' . $this->request->getPathInfo());
             }
 
             $controller = $params['controller'];
